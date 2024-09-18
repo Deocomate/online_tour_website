@@ -17,6 +17,7 @@
     <main>
         <!-- Code here -->
         <h1>Base Template</h1>
+        <h2>Update</h2>
     </main>
     <!-- Include Footer -->
     <?php include "./component-footer.php" ?>
