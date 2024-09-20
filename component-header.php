@@ -4,12 +4,12 @@
             <a href="#"><img src="/assets/imgs/logo.jpg" alt=""></a>
         </div>
         <div class="header-right">
-            <nav class="tour-navbar">
+            <nav class="tour-navbar d-none d-md-block">
                 <ul>
                     <li><a href="#">Giới Thiệu</a></li>
                     <li>
                         <a class="tour" href="#">Du Lịch<i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="tourism-menu">
+                        <div class="tourism-menu animation-fly">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-3">
@@ -20,7 +20,7 @@
                                         </ul>
                                     </div>
                                     <div class="col-9">
-                                        <div class="foreign tag-content">
+                                        <div class="foreign tag-content pb-4">
                                             <div class="row">
                                                 <div class="col col-style">
                                                     <a href="#">Châu Âu</a>
@@ -58,7 +58,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="domestic tag-content">
+                                        <div class="domestic tag-content pb-4">
                                             <div class="row">
                                                 <div class="col col-style">
                                                     <a href="#">Miền Trung</a>
@@ -108,15 +108,269 @@
                             </div>
                         </div>
                     </li>
-
                     <li><a href="#">Tour Khách Đoàn</a></li>
-                    <li><a href="#">Đối Tác<i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li class="partner">
+                        <a href="#">Đối Tác<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="parter-item animation-fly">
+                            <a href="#">Ngân Hàng</a>
+                            <a href="#">Tài Chính</a>
+                            <a href="#">Thương Mại</a>
+                        </div>
+                    </li>
                     <li><a href="#">Tin Tức</a></li>
                     <li><a href="#">Chính Sách & Quy Định</a></li>
                     <li><a href="#">Liên Hệ</a></li>
                     <li><a href="#">Tuyển Dụng</a></li>
                 </ul>
             </nav>
+            <div class="header-mobile d-md-none">
+                <ul>
+                    <li class="phone-number">
+                        <a href="tel:"><i class="fa-solid fa-phone"></i></a>
+                    </li>
+                    <li id="menu-mobile" class="menu-mobile">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="list-item-mobile d-md-none">
+                <ul>
+                    <li>Giới Thiệu</li>
+                    <li id="foreign-mobile">
+                        Du Lịch Nước Ngoài
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="foreign-mobile">
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Châu Âu</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Bỉ</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Pháp</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Đức</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Ý</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Thổ Nhĩ Kỳ</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="fw-bold text-decoration-underline" href="#">Xem tất cả<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Châu Á</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Nhật Bản</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Trung Quốc</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Hàn Quốc</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Đài Loan</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Dubai</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="fw-bold text-decoration-underline" href="#">Xem tất cả<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Châu Úc</a>
+                                </div>
+                                <div class="row">
+                                    <a href="#">Úc</a>
+                                </div>
+                            </div>
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Châu Mỹ</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Hoa Kỳ</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Canada</a>
+                                    </div>
+                                    <div class="col"></div>
+                                </div>
+                            </div>
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Châu Phi</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Ai Cập</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Nam Phi</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Mauritius</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="domestic-mobile">
+                        Du Lịch Trong Nước
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="domestic-mobile">
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Miền Trung</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Huế</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Đà Nẵng</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Hội An</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Quảng Bình</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Tây Nguyên</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="fw-bold text-decoration-underline" href="#">Xem tất cả<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Miền Bắc</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Hà Nội</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Hạ Long</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Ninh Bình</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Tây Bắc</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Sapa</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="fw-bold text-decoration-underline" href="#">Xem tất cả<i
+                                                class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Miền Nam</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">TP Hồ Chí Minh</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Côn Đảo</a>
+                                    </div>
+                                    <div class="col">Phú Quốc</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="luxurytravel-mobile">
+                        Tour Cao Cấp
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="luxurytravel-mobile">
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Châu Mỹ</a>
+                                </div>
+                                <div class="row">
+                                    <a href="#">Bờ Tây</a>
+                                </div>
+                            </div>
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a class="fw-bold" href="#">Tour Du Thuyền</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Singapore - Malaysia</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Đài Loan - Nhật Bản</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#">Hong Kong - Nhật Bản</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Tour Khách Đoàn</li>
+                    <li id="partner-mobile">
+                        Đối Tác
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="partner-mobile">
+                            <div class="mobile-item">
+                                <div class="row">
+                                    <a href="#">Ngân Hàng</a>
+                                </div>
+                                <div class="mobile-item">
+                                    <div class="row">
+                                        <a href="#">Tài Chính</a>
+                                    </div>
+                                </div>
+                                <div class="mobile-item">
+                                    <div class="row">
+                                        <a href="#">Thương Mại</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>Tin Tức</li>
+                    <li>Chính Sách & Quy Định</li>
+                    <li>Liên Hệ</li>
+                    <li>Tuyển Dụng</li>
+                </ul>
+            </div>
         </div>
+    </div>
     </div>
 </header>
