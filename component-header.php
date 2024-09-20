@@ -14,13 +14,13 @@
                                 <div class="row">
                                     <div class="col-3">
                                         <ul>
-                                            <li>Du Lịch Nước Ngoài</li>
-                                            <li>Du Lịch Trong Nước</li>
-                                            <li>Tour Cao Cấp</li>
+                                            <li class="tag-navbar-super" id="tag-foreign">Du Lịch Nước Ngoài</li>
+                                            <li class="tag-navbar-super" id="tag-domestic">Du Lịch Trong Nước</li>
+                                            <li class="tag-navbar-super" id="tag-high">Tour Cao Cấp</li>
                                         </ul>
                                     </div>
                                     <div class="col-9">
-                                        <div class="foreign">
+                                        <div class="foreign tag-content">
                                             <div class="row">
                                                 <div class="col col-style">
                                                     <a href="#">Châu Âu</a>
@@ -58,7 +58,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="domestic">
+                                        <div class="domestic tag-content">
                                             <div class="row">
                                                 <div class="col col-style">
                                                     <a href="#">Miền Trung</a>
@@ -87,7 +87,7 @@
                                                 <div class="col"></div>
                                             </div>
                                         </div>
-                                        <div class="high-class">
+                                        <div class="high-class tag-content">
                                             <div class="row">
                                                 <div class="col col-style">
                                                     <a href="#">Châu Mỹ</a>
