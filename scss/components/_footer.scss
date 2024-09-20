@@ -1,0 +1,100 @@
+
+.footer__title-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.footer__item-list {
+    list-style-type: none;
+    margin: 12px 0 0;
+    padding: 0;
+}
+
+.footer__item-list-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.local-item {
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #013879;
+    .footer__content {
+        padding: 56px 16px 0;
+        .certification__text {
+            p {
+                font-size: 10px;
+                color: #fff;
+            }
+        }
+        .footer__item-list-link--width {
+            list-style-type: none;
+        }
+        .footer__contact {
+            .footer-item-title {
+                color: #fff;
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .footer__item-list {
+                color: #fff;
+                font-size: 12px;
+                p {
+                    margin: 0;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .footer__email-link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+        .footer__input {
+            margin: 20px 0;
+            .form-control {
+                padding: 12px 0;
+                border-radius: 0;
+                background-color: #013879;
+                border-color: grey;
+            }
+            input::placeholder {
+                color: #fff;
+            }
+            .btn__input {
+                border: 1px solid gray;
+                border-left: none;
+                background-color: #013879;
+                color: #fff;
+                .btn-icon {
+                    font-size: 20px;
+                }
+            }
+        }
+        .footer__social {
+            
+        }
+    }
+}
