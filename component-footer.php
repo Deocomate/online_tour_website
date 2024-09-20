@@ -13,7 +13,7 @@
                             </div>
                             <div class="row mt-2">
                                 <!-- title l -->
-                                <div class="col-12 col-md-4">
+                                <div class=" col-4 col-md-4">
                                     <div class="local-item">
                                         <div class="footer__title">
                                             <a href="" class="footer__title-link">châu âu</a> 
@@ -27,7 +27,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
+                                <div class="col-4 col-md-4">
                                     <div class="footer__title">
                                         <a href="" class="footer__title-link">châu á</a> 
                                     </div>
@@ -41,7 +41,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
+                                <div class="col-4 col-md-4">
                                     <div class="footer__title">
                                         <a href="" class="footer__title-link">châu úc</a> 
                                     </div>
@@ -51,7 +51,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4"><a href="" class="footer__title-link"></a> 
+                                <div class=" col-4 col-md-4">
                                     <div class="footer__title">
                                         <a href="" class="footer__title-link">châu mỹ</a> 
                                     </div>
@@ -62,7 +62,7 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4">
+                                <div class="col-4 col-md-4">
                                     <div class="footer__title">
                                         <a href="" class="footer__title-link">châu phi</a> 
                                     </div>
@@ -80,7 +80,7 @@
                                 <a href="" class="footer__title-link">tour cao cấp</a> 
                             </div>
                             <div class="row">
-                                <div class="col-12 col-md-4">
+                                <div class="col-4 col-md-4">
                                     <li class="footer__item-list-link--width">
                                         <a href="#" class="footer__item-list-link">châu mỹ</a>
                                     </li>
@@ -93,7 +93,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4">
+                    <div class="col-4 col-md-4">
                         <div class="footer__title">
                             <a href="" class="footer__title-link">du lịch trong nước</a> 
                         </div>
@@ -110,11 +110,18 @@
                 <div class="footer__title">
                     <a href="" class="footer__title-link">chứng nhận</a>
                 </div>
-                <div class="row">
+                <div class="row mt-3">
                     <div class="col-12 col-md-4">
                         <div class="footer__img">
-                            <!-- <a href=""><img src="./assets/imgLbi/check.png" alt=""></a>
-                            <a href=""><img src="./assets/imgLbi/protected.png" alt=""></a> -->
+                            <div class="row">
+                                <div class="col-2 col-md-12">
+                                    <a href=""><img class="log-img" src="./assets/imgLbi/check.png" alt=""></a>
+                                </div>
+
+                                <div class="col-2 col-md-12">
+                                    <a href=""><img class="log-img" src="./assets/imgLbi/protected.png" alt=""></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-8">
@@ -194,7 +201,7 @@
                                 <li><a href="" class="footer__item-list-link">tuyển dụng</a></li>
                             </ul>
 
-                            <div class="footer__item-title">
+                            <div class="footer__item-title mt-3">
                                 <a class="footer__title">
                                     chính sách và quy định
                                 </a>
@@ -228,20 +235,23 @@
                     mạng xã hội
                 </div>
                 <div class="row mt-2">
-                    <div class="col-12 col-md-6 footer__social">
+                    <div class="col-6 col-md-6 footer__social d-flex justify-content-between align-items-center">
                         <a href="" class="footer__social-link"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="" class="footer__social-link"><i class="fa-brands fa-square-instagram"></i></a>
                         <a href="" class="footer__social-link"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="" class="footer__social-link"><i class="fa-brands fa-youtube"></i></a>
                     </div>
-                    <div class="col-md-6 d-none d-md-block">
+                    <div class="col-md-6 d-none d-md-block footer__phone">
                         <a href="" class="footer__phone-link">
-                            <span><i class="bi bi-geo-alt"></i> 1900 6420</span>
+                            <i class="bi bi-telephone"></i> 1900 6420
                         </a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer__copyright mt-5">
+        <span>Copyright © 1999-2023 Công ty TNHH Du Lịch Lửa Việt</span>
     </div>
 </footer>
     

@@ -7,6 +7,25 @@
     font-weight: bold;
 }
 
+.footer__phone-link {
+    text-decoration: none;
+    color: #fff;
+    border-radius: 0;
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    background-color: red;
+    text-align: center;
+    transition: 0.5s;
+    &:hover {
+        background-color: #77aef0;
+    }
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
 .footer__item-list {
     list-style-type: none;
     margin: 12px 0 0;
@@ -38,6 +57,17 @@
     background-color: #013879;
     .footer__content {
         padding: 56px 16px 0;
+        .footer__img{
+            display: flex;
+            align-items: center;
+            a {
+                .log-img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+            }
+        }
         .certification__text {
             p {
                 font-size: 10px;
@@ -82,6 +112,8 @@
             }
             input::placeholder {
                 color: #fff;
+                font-size: 16px;
+                padding: 8px;
             }
             .btn__input {
                 border: 1px solid gray;
@@ -94,7 +126,21 @@
             }
         }
         .footer__social {
-            
+            padding: 0 14px;
+            .footer__social-link {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+        
+    }
+    .footer__copyright {
+        background-color: #000;
+        text-align: center;
+        span {
+            font-size: 10px;
+            color: #fff;
         }
     }
 }
+
