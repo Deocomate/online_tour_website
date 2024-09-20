@@ -1,5 +1,9 @@
+// Web base
 @import "./base/reset";
+
+// Web config
 @import "./configs/config";
+@import "./configs/font";
 
 // Import components
 @import "./components/header";
