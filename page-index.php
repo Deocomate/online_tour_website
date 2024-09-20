@@ -16,8 +16,6 @@
     <!-- End Include Header -->
     <main>
         <!-- Code here -->
-        <h1>Base Template</h1>
-        <h2>Hello Ae</h2>
     </main>
     <!-- Include Footer -->
     <?php include "./component-footer.php" ?>
