@@ -1,0 +1,154 @@
+header {
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 0 22px 0 32px;
+  }
+
+  .header_left {
+    margin: auto 0;
+    img {
+      width: 155px;
+      height: auto;
+      transition: 0.2s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .header-right {
+    .tour-navbar {
+      padding: 0;
+      ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+        li {
+          padding: 24px 0 24px;
+          display: block;
+          margin-left: 42px;
+          i {
+            font-size: 10px;
+            margin-left: 6px;
+          }
+          a {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 1;
+            font-weight: 500;
+            color: #013879;
+            padding-bottom: 8px;
+            transition: opacity 0.3s;
+            &:hover::after {
+              width: 100%;
+            }
+            &::after {
+              display: block;
+              content: "";
+              width: 0;
+              height: 1.5px;
+              background-color: red;
+              transition: all 0.3s;
+            }
+          }
+          .search {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// tourism-menu
+header {
+  .tourism-menu {
+    top: 55%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-top: 82px;
+    padding-bottom: 37px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+      opacity 0.4s ease,
+      transform 0.3s ease;
+    .container {
+      ul {
+        flex-direction: column;
+        li {
+          margin: 0;
+          padding: 0 0 8px 0;
+          font-size: 16px;
+          color: #222;
+          cursor: pointer;
+        }
+      }
+      .col-9 {
+        a {
+          display: block;
+          color: #222;
+          font-weight: 400;
+          padding: 0;
+          margin-bottom: 15px;
+          font-size: 14px;
+          &::after {
+            display: none;
+          }
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        .col-style {
+          a:first-child {
+            font-weight: 600;
+            font-size: 16px;
+          }
+          a:last-child {
+            font-weight: 600;
+            text-decoration: underline;
+          }
+        }
+        .col {
+          a:first-child {
+            font-weight: 600;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .high-class {
+      a:last-child {
+        font-weight: 400 !important;
+        text-decoration: none !important;
+      }
+    }
+  }
+  // .domestic,
+  // .high-class {
+  //   display: none;
+  // }
+}
+
+header {
+  .tour {
+    &:hover + .tourism-menu {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .tourism-menu {
+    &:hover {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
