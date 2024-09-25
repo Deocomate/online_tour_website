@@ -5,7 +5,10 @@ let tagContentDomestic = document.querySelector(".domestic");
 let tagContentHighClass = document.querySelector(".high-class");
 for (let tag of tagsHTML) {
   tag.addEventListener("mouseover", () => {
+    console.log(tag);
+
     let tagId = tag.getAttribute("id");
+    console.log(tagId);
 
     if (tagId === "tag-foreign") {
       tagContentDomestic.classList.add("d-none");
@@ -33,25 +36,25 @@ document
 document
   .getElementById("domestic-mobile")
   .addEventListener("click", function () {
-      const domesticMenu = document.querySelector(".domestic-mobile");
-      domesticMenu.classList.toggle("show");
+    const domesticMenu = document.querySelector(".domestic-mobile");
+    domesticMenu.classList.toggle("show");
   });
 
-  document
+document
   .getElementById("luxurytravel-mobile")
   .addEventListener("click", function () {
-      const luxurytravelMenu = document.querySelector(".luxurytravel-mobile");
-      luxurytravelMenu.classList.toggle("show");
+    const luxurytravelMenu = document.querySelector(".luxurytravel-mobile");
+    luxurytravelMenu.classList.toggle("show");
   });
 
-  document
+document
   .getElementById("partner-mobile")
   .addEventListener("click", function () {
-      const partnerMenu = document.querySelector(".partner-mobile");
-      partnerMenu.classList.toggle("show");
+    const partnerMenu = document.querySelector(".partner-mobile");
+    partnerMenu.classList.toggle("show");
   });
 
-  document.getElementById('menu-mobile').addEventListener('click', function() {
-    const listItemMobile = document.querySelector('.list-item-mobile');
-    listItemMobile.classList.toggle('show'); // Thêm hoặc xóa class show
+document.getElementById("menu-mobile").addEventListener("click", function () {
+  const listItemMobile = document.querySelector(".list-item-mobile");
+  listItemMobile.classList.toggle("show"); // Thêm hoặc xóa class show
 });
