@@ -73,7 +73,7 @@ header {
     width: 100%;
     padding-top: 82px;
     padding-bottom: 37px;
-
+    z-index: 2;
     .container {
       ul {
         flex-direction: column;
@@ -130,6 +130,16 @@ header {
 // Hover
 header {
   .tour {
+    &::before {
+      top: 55%;
+      position: absolute;
+      content: "";
+      // background-color: red;
+      height: 45px;
+      width: 7%;
+      // display: block;
+      z-index: 2;
+    }
     &:hover + .tourism-menu {
       visibility: visible;
       opacity: 1;
@@ -159,7 +169,7 @@ header {
       left: -44px;
       width: 190px;
       margin-top: 10px;
-      padding: 20px 20px 12px;
+      padding: 20px 20px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       background-color: #fff;
       a {
@@ -240,6 +250,7 @@ header {
         width: 100%;
         animation: fadeIn .4s;
         background-color: #e9ecef;
+        z-index: 2;
         ul {
           margin: 0;
           padding: 0;
