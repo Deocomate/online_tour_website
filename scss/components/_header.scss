@@ -1,4 +1,10 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
   .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -243,12 +249,15 @@ header {
   header {
     .header-right {
       .list-item-mobile {
+        overflow-y: auto;
+        z-index: 999;
+        height: 100vh;
         position: absolute;
-        top: 110%;
+        top: 100%;
         left: 0;
         display: none;
         width: 100%;
-        animation: fadeIn .4s;
+        animation: fadeIn 0.4s;
         background-color: #e9ecef;
         z-index: 2;
         ul {
@@ -302,7 +311,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992.98px){
+@media screen and (min-width: 768px) and (max-width: 992.98px) {
   header {
     .tourism-menu {
       top: 80%;
@@ -326,7 +335,7 @@ header {
   }
 }
 
-@media screen and (min-width: 992.99px) and (max-width: 1231px){
+@media screen and (min-width: 992.99px) and (max-width: 1231px) {
   header {
     .tourism-menu {
       top: 80%;
@@ -349,7 +358,6 @@ header {
     }
   }
 }
-
 
 @keyframes fadeIn {
   0% {
