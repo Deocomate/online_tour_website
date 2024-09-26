@@ -1,0 +1,83 @@
+#component-favourist-tour {
+    background-color: #fff;
+    padding: 80px 0;
+    .component-favourist-tour-content {
+        .component-card-list-favourist-tour {
+            padding-top: 70px;
+            .favourist-tour-item {
+                height: 100%;
+                padding: 5px 0;
+                .favourist-tour-item-overlay {
+                    position: relative;
+                    height: 100%;
+                    &::before {
+                        content: ''; 
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.5); 
+                        opacity: 0; 
+                        transition: opacity 0.5s ease; 
+                    }
+                    &:hover::before {
+                        opacity: 1;
+                        cursor: pointer;
+                    }
+                    &:hover .favourist-name-left {
+                        top: 48%; 
+                        left: 40%; 
+                        opacity: 1;
+                    }
+                    &:hover .favourist-name-right {
+                        top: 43%; 
+                        left: 30%; 
+                        opacity: 1;
+                    }
+                    &:hover .favourist-name-right-bottom {
+                        top: 40%; 
+                        left: 40%; 
+                        opacity: 1;
+                    }
+                    .favourist-img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+            .favourist-name-left {
+                position: absolute;
+                top: 85%;
+                left: 2%;
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                font-size: 24px; 
+                transition: all 0.5s ease; 
+            }
+            .favourist-name-right {
+                position: absolute;
+                top: 78%;
+                left: 2%;            
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                font-size: 24px; 
+                transition: all 0.5s ease; 
+            }
+            .favourist-name-right-bottom {
+                position: absolute;
+                top: 78%;
+                left: 1%;
+                display: block;
+                text-decoration: none;
+                color: #fff;
+                font-size: 24px; 
+                transition: all 0.5s ease; 
+            }
+        }
+    }
+}
+

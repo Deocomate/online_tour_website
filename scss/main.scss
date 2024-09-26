@@ -9,7 +9,14 @@
 @import "./components/header";
 @import "./components/footer";
 @import "./components/card";
+@import "./components/card/component-card-tour";
+//Components LongBi
+@import "./components/card/component-card-prominent-tour";
+@import "./components/card/component-card-favourist-tour";
 
 // Import page layout
 @import "./pages/index/index";
+@import "./pages/index/component-top-tour";
 @import "./pages/contact/contact";
+//Index LongBi
+@import "./pages/index/component-prominent-tour";

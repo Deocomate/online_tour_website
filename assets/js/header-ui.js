@@ -5,6 +5,10 @@ let tagContentDomestic = document.querySelector(".domestic")
 let tagContentHighClass = document.querySelector(".high-class")
 for (let tag of tagsHTML) {
     tag.addEventListener("mouseover", () => {
+
+        console.log(tag);
+        
+
         let tagId = tag.getAttribute("id")
         console.log(tagId);
 

@@ -1,0 +1,116 @@
+#component-prominent-tour {
+    padding-top: 80px;
+    background-color: #fff;
+    .component-card-list-prominent-tour {
+        .prominent-tour-card {
+            width: 100%;
+            margin: 70px 0;
+            .component-card-tour_img {
+                position: relative;
+                img {
+                    transition: transform 0.3s ease;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+                .card-tour-img{
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                }
+                .prominent-tour-card_standard {
+                    position: absolute;
+                    top: 70%;
+                    left: 0;
+                    color: #fff;
+                    font-size: 16px;
+                    background-color: rgba(61, 130, 241, 0.5);
+                    padding: 2px 8px;
+                }
+            }
+        }
+        .card-body {
+            .time-limit {
+                display: inline-block;
+                font-size: 12px;
+                padding-top: 15px;
+                text-transform: capitalize;
+                color: #000;
+            }
+            .card-title {
+                margin-top: 8px;
+                color: #000;
+            }
+            .prominent-tour-card_id {
+                display: flex;
+                margin-top: 6px;
+                margin-left: 2px;
+                height: 1rem;
+                color: #000;
+
+                .prominent-tour-card_id-tittle {
+                    font-size: 13px;
+                }
+                .prominent-tour-card_id-txt {
+                    font-size: 13px;
+                    font-weight: bold;   
+                    margin-left: 4px;            
+                }
+            }
+            .prominent-tour-card_start {
+                margin-top: 6px;
+                height: 1rem;
+                display: flex;
+                color: #000;
+
+                .prominent-tour-card_start-tittle {
+                    font-size: 13px;
+                }
+                .prominent-tour-card_start-txt {
+                    font-size: 13px;
+                    font-weight: bold;
+                    margin-left: 4px;
+                }
+            }
+            .prominent-tour-card_price {
+                display: flex;
+                color: #000;
+                margin-top: 8px;
+                p {
+                    color: rgb(229, 91, 91);
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .prominent-tour-card_price-VND {
+                    font-size: 10px;
+                    display: flex;
+                    align-items: flex-end;
+                    transform: translateY(-5px);
+                    margin-left: 2px;
+                }
+            }
+            .detail-btn {
+                background-color: rgb(222, 10, 70);
+                border-radius: 0;
+                color: #fff;
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+    .prominent-tour-button_show-more {
+        width: 20%;
+        padding: 10px 30px;
+        border-radius: 0;
+        margin: 30px auto;
+        background-color: rgb(222, 10, 70);
+        color: #fff;
+        font-size: 20px;
+        transition: 0.7s ease;
+        &:hover {
+            opacity: 0.9;
+            background-color: rgb(10, 154, 232);
+        }
+    } 
+}
