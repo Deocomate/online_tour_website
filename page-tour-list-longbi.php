@@ -17,6 +17,19 @@
             ?> -->
     <!-- End Include Header -->
     <main>
+        <div class="container">
+            <ul class="navigation-list">
+                <li>
+                    <a href="" class="nav-home-link">
+                        <i class="bi bi-house-door"></i>
+                    </a>
+                    <i class="bi bi-chevron-right"></i>
+                </li>
+                <li>
+                    <span> Du Lịch </span>
+                </li>
+            </ul>
+        </div>
         <section id="page-tour-list">
             <div class="page-tour-list-content container">
                 <div class="row">
@@ -122,8 +135,8 @@
                                 </div>
                             </div>
                             <div class="side-bar-budget">
-                                <label for="customRange1" class="form-label item-tittle">ngân sách</label>
-                                <input type="range" class="form-range" id="customRange1">
+                                <label for="customRange1" class="form-label item-tittle">Ngân sách</label>
+                                <input type="range" class="form-range" id="customRange1" min="0" max="100" step="1">
                                 <div class="label-range">
                                     <span id="range-value1">0 triệu</span>
                                 </div>
@@ -266,6 +279,15 @@
                     toggleIcon.classList.add('bi-chevron-down');
                 }
             });
+        });
+
+        // Lấy các phần tử cần thiết
+        const rangeInput = document.getElementById('customRange1');
+        const rangeValue = document.getElementById('range-value1');
+
+        // Cập nhật giá trị khi thanh trượt thay đổi
+        rangeInput.addEventListener('input', function() {
+            rangeValue.textContent = `${rangeInput.value} triệu`;
         });
     </script>
     <!-- Include Footer -->
