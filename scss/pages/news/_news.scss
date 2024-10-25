@@ -1,0 +1,128 @@
+// navigation
+.navigation-new-list {
+    display: flex; 
+    align-items: center; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    padding-top: 50px;
+    li {
+        list-style-type: none;
+    }
+    .nav-home-link {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+#new-list {
+    .new-label {
+        padding-top: 50px;
+        margin-bottom: 50px;
+        span {
+            font-size: 50px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #013879;
+        }
+    }
+    .item-list {
+        a {
+            &:hover {
+                opacity: 1;
+            }
+        }
+        li {
+            list-style-type: none;
+            margin: 40px 0;
+            padding-bottom: 40px;
+            position: relative;
+            ::after {
+                content: ""; 
+                position: absolute; 
+                left: 0; 
+                bottom: 0; 
+                width: 100%; 
+                height: 1px; 
+                background-color: rgb(169, 165, 165); 
+            }
+            &:last-child::after {
+                content: none; /* Không hiển thị dòng gạch */
+            }
+        }
+        .item-link {
+            text-decoration: none;
+            color: #000;
+            &:hover img{
+                transform: scale(1.1);
+            }
+            .item-img {
+                overflow: hidden; 
+                width: 100%; 
+                height: auto; 
+                img {
+                    width: 100%; 
+                    height: auto; 
+                    display: block; 
+                    transition: transform 0.3s ease;
+                }
+            }
+            .item-info {
+                .uknow {
+                    display: flex;
+                    .uknow-cat {
+                        font-size: 14px;
+                        background-color: #8ac3ee;
+                        padding: 0 6px;
+                        border-radius: 10px;
+                    }
+                    .uknow-date {
+                        color: #6f6a6a;
+                        margin-left: 10px;
+                    }
+                }
+                .item-title {
+                    font-size: 20px;
+                    margin: 20px 0 15px;
+                    text-transform: uppercase; 
+                    font-weight: 500;
+                    white-space: normal; /* Cho phép xuống dòng */
+                    overflow-wrap: break-word; /* Tự động xuống dòng khi cần */
+                }
+                .item-des {
+                    font-size: 16px;
+                    color: #6f6a6a;
+                    display: -webkit-box; /* Thiết lập hiển thị cho flexbox */
+                    -webkit-box-orient: vertical; /* Hướng thẳng đứng */
+                    -webkit-line-clamp: 4; /* Số dòng tối đa hiển thị */
+                    overflow: hidden; /* Ẩn phần văn bản tràn ra ngoài */
+                    text-overflow: ellipsis; /* Hiển thị dấu ba chấm */
+                    max-height: 6rem; /* Chiều cao tối đa cho 6 dòng (giả sử mỗi dòng khoảng 1.5rem) */
+                }
+            }
+        }  
+    }
+    .home-pagination {
+        display: block;
+        width: 100%;
+        margin: 30px 0;
+        .pagination {
+            display: flex;
+            justify-content: center;
+            .page-item {
+                // padding: 4px;
+                margin: 0 8px;
+                border: 1px solid transparent; /* Border trong suốt ban đầu */
+                &:hover {
+                    border: 1px solid red; /* Đường viền đỏ */
+                    border-radius: 50%;
+                }
+                .page-link {
+                    border: none;
+                    color: black;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
